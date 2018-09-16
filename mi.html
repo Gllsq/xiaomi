@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/mi.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_781661_33cvkrdpmlk.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_778905_2sb7ze6yt1t.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<script src="css/animate.js"></script>
 	<script src="css/banner.js"></script>
 </head>
@@ -975,9 +976,9 @@
 			<div class="coun">
 				<div class="box">00</div>
 				<div class="dosh">:</div>
-				<div class="box">25</div>
+				<div class="box">00</div>
 				<div class="dosh">:</div>
-				<div class="box">59</div>
+				<div class="box">00</div>
 			</div>
 		</div>
 		<div class="tobt">
@@ -2394,7 +2395,7 @@
 	let rightBtn=document.querySelectorAll(".rightBtn")[0];
 	let widths=parseInt(getComputedStyle(imgs[0],null).width);
 	console.log(imgs,point,banner,leftBtn,rightBtn,widths);
-	banner_lr(imgs,point,banner,leftBtn,rightBtn,widths,"active",2000);
+	banner_lr(imgs,point,banner,leftBtn,rightBtn,widths,"active",4000);
     //内容
      let pic=document.querySelectorAll(".elevteen .container .two .fir .qq");
 	let dot=document.querySelectorAll(".elevteen .container .two .fir .bot .bot1");
@@ -2456,4 +2457,9 @@
     let jdson = document.querySelectorAll(".household .bdd ");
     console.log(jdfu, jdson);
     home_jd(jdfu,jdson);
+
+    //倒计时
+    let spans=document.querySelectorAll(".mi .coun .box");
+    console.log(spans);
+    djs(spans);
 </script>
